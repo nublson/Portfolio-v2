@@ -19,7 +19,7 @@ const Heading = ({ title, subtitle }) => {
     return (
         <StyledHeading>
             <Title>{title}</Title>
-            <Subtitle>"{subtitle}"</Subtitle>
+            {subtitle ? <Subtitle>"{subtitle}"</Subtitle> : null}
         </StyledHeading>
     )
 }
