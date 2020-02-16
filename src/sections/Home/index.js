@@ -21,7 +21,7 @@ const Home = () => {
                             </p>
                             <p>
                                 {" "}
-                                <span>PT </span>| ENG
+                                PT | <span>ENG</span>
                             </p>
                         </StyledInfo>
 

@@ -25,10 +25,11 @@ export const StyledInfo = styled.div`
         font-weight: bold;
         margin: 0;
         padding: 0;
+        color: var(--text-grey);
         transform: rotate(-90deg) translateX(1.75rem) translateY(2.4rem);
 
         span {
-            color: var(--text-grey);
+            color: var(--text-highlight);
         }
     }
 
@@ -39,6 +40,7 @@ export const StyledInfo = styled.div`
     p {
         font-size: 1.6rem;
         transform: translateY(0.7rem);
+        color: var(--text-highlight);
     }
 `
 
