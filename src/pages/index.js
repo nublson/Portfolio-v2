@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "../components/Layout"
 
+import Home from "../sections/Home"
+
 const App = () => {
     return (
         <Layout>
-            <h1>Hello World!</h1>
+            <Home />
         </Layout>
     )
 }
