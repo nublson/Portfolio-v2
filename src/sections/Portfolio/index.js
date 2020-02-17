@@ -15,7 +15,7 @@ import PortfolioItem from "../../templates/PortfolioItem"
 
 const Portfolio = () => {
     return (
-        <StyledSection>
+        <StyledSection id="Portfolio" background>
             <Container>
                 <Wrapper>
                     <Content>

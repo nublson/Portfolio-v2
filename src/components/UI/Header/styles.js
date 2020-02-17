@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-scroll"
 
 export const Container = styled.div`
     padding: 3rem 0;
@@ -14,10 +15,15 @@ export const StyledNav = styled.nav`
 
     display: flex;
     justify-content: space-between;
+
+    .active {
+        color: var(--text-highlight);
+    }
 `
 
-export const StyledItem = styled.p`
+export const StyledItem = styled(Link)`
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--text-grey);
+    cursor: pointer;
 `

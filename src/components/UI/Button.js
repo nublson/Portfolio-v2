@@ -12,11 +12,7 @@ const StyledButton = styled.a`
 `
 
 const Button = ({ text, to }) => {
-    return (
-        <StyledButton href={to} target="_blank" rel="noopener">
-            {text}
-        </StyledButton>
-    )
+    return <StyledButton href={`mailto:${to}`}>{text}</StyledButton>
 }
 
 export default Button

@@ -8,7 +8,7 @@ import logo from "../../images/logo_black.svg"
 
 const Home = () => {
     return (
-        <StyledSection fullHeight>
+        <StyledSection id="Home" fullHeight>
             <Container>
                 <Wrapper>
                     <Header />

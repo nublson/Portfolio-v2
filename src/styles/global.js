@@ -24,6 +24,7 @@ export default createGlobalStyle`
         --text-grey: ${props => props.theme.colors.text_grey};
         --inactive-star: ${props => props.theme.colors.inactive_star};
         --background: ${props => props.theme.colors.background};
+        --background-sec: ${props => props.theme.colors.background_sec};
         --white: #fff;
         --radius: .3rem;
         background-color: var(--background);

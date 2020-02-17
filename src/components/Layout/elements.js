@@ -17,6 +17,8 @@ export const StyledSection = styled.section`
     overflow-y: hidden !important;
     justify-content: center;
     flex-direction: column;
+    background-color: ${({ background }) =>
+        background ? "var(--background-sec)" : null};
     width: 100%;
     min-height: ${({ fullHeight }) => (fullHeight ? "100vh" : "auto")};
     min-height: ${({ fullHeight }) =>

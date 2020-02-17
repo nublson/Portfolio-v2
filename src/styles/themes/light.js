@@ -7,6 +7,7 @@ export default {
         text_grey: "#828282",
         inactive_star: "#999",
         background: "#fff",
+        background_sec: "#f6f6f6",
     },
 
     mediaQueries,

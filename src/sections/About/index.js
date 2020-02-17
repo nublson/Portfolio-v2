@@ -10,7 +10,7 @@ import Heading from "../../components/UI/Heading"
 
 const About = () => {
     return (
-        <StyledSection>
+        <StyledSection id="About me" background>
             <Container>
                 <Wrapper>
                     <Content>

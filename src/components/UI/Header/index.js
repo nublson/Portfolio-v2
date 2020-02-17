@@ -8,7 +8,9 @@ const Header = () => {
         <Container>
             <StyledNav>
                 {items.map((item, index) => (
-                    <StyledItem key={index}>{item}</StyledItem>
+                    <StyledItem to={item} spy={true} smooth={true} key={index}>
+                        {item}
+                    </StyledItem>
                 ))}
             </StyledNav>
         </Container>

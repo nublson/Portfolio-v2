@@ -20,7 +20,7 @@ import { SocialIcon } from "../../components/UI/Icons"
 
 const Contacts = () => {
     return (
-        <StyledSection>
+        <StyledSection id="Contacts">
             <Container>
                 <Wrapper>
                     <Heading
@@ -33,13 +33,28 @@ const Contacts = () => {
                             just chat? <br /> You are welcome!
                         </p>
 
-                        <Button to="#" text="Send message" />
+                        <Button
+                            to="nubelsondev@hotmail.com"
+                            text="Send message"
+                        />
 
                         <SocialGroup>
-                            <SocialIcon to="#" icon={faGithub} />
-                            <SocialIcon to="#" icon={faLinkedinIn} />
-                            <SocialIcon to="#" icon={faInstagram} />
-                            <SocialIcon to="#" icon={faTwitter} />
+                            <SocialIcon
+                                to="https://github.com/nubelsondev"
+                                icon={faGithub}
+                            />
+                            <SocialIcon
+                                to="https://www.linkedin.com/in/nubelsondev/"
+                                icon={faLinkedinIn}
+                            />
+                            <SocialIcon
+                                to="https://www.instagram.com/nubelsondev/"
+                                icon={faInstagram}
+                            />
+                            <SocialIcon
+                                to="https://twitter.com/nubelsondev"
+                                icon={faTwitter}
+                            />
                         </SocialGroup>
 
                         <p>

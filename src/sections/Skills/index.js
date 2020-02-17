@@ -17,7 +17,7 @@ import { SkillCard } from "../../components/UI/Cards"
 
 const Skills = () => {
     return (
-        <StyledSection>
+        <StyledSection id="Skills">
             <Container>
                 <Wrapper>
                     <SmallWrapper>
