@@ -14,5 +14,6 @@ export const ProjectSection = styled.div`
         font-size: 2rem;
         font-weight: bold;
         text-decoration: underline;
+        color: var(--text-highlight);
     }
 `
