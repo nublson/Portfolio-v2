@@ -1,6 +1,6 @@
 # Nubelson Portfolio v2
 
-![Portfolio Preview](./thumbnail.png)
+![Portfolio Preview](./thumbnailv2.png)
 
 This is version 2 of my portfolio, including a new, more original and minimalist design.
 
