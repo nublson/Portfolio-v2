@@ -33,10 +33,6 @@ export const StyledInfo = styled.div`
         }
     }
 
-    img {
-        height: 8.7rem;
-    }
-
     p {
         font-size: 1.6rem;
         transform: translateY(0.7rem);

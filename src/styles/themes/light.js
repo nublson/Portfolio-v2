@@ -1,6 +1,8 @@
 import mediaQueries from "../mediaQueries"
 
 export default {
+    name: "light",
+
     colors: {
         text: "#000",
         text_highlight: "#070707",

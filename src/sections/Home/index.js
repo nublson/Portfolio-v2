@@ -4,9 +4,9 @@ import { Wrapper, Content, StyledInfo, StyledImage } from "./styles"
 import { StyledSection, Container } from "../../components/Layout/elements"
 import Header from "../../components/UI/Header"
 
-import logo from "../../images/logo_black.svg"
+import Logo from "../../components/UI/Logo"
 
-const Home = () => {
+const Home = ({ theme }) => {
     return (
         <StyledSection id="Home" fullHeight>
             <Container>
@@ -15,7 +15,7 @@ const Home = () => {
 
                     <Content>
                         <StyledInfo>
-                            <img src={logo} alt="Logo" />
+                            <Logo theme={theme} />
                             <p>
                                 UX | UI Designer & <br /> Full Stack Developer
                             </p>
