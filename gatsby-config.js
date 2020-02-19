@@ -5,10 +5,7 @@ module.exports = {
         author: `Nubelson Fernandes`,
         siteUrl: "https://www.nubelson.dev",
         social: {
-            twitter: "nubelsondev",
-            instagram: "nubelsondev",
-            linkedin: "nubelsondev",
-            github: "nubelsondev",
+            username: "nubelsondev",
             email: "hello@nubelson.dev",
         },
         // name of the image for social website share, should be in static folder
@@ -34,7 +31,7 @@ module.exports = {
                 background_color: `#fff`,
                 theme_color: `#F9D342`,
                 display: `minimal-ui`,
-                icon: `src/images/icon_yellow.svg`,
+                icon: `src/images/icon.svg`,
             },
         },
         `gatsby-plugin-offline`,

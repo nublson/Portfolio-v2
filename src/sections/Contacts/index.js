@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import {
     faGithub,
     faLinkedinIn,
@@ -19,6 +20,21 @@ import Button from "../../components/UI/Button"
 import { SocialIcon } from "../../components/UI/Icons"
 
 const Contacts = () => {
+    const { site } = useStaticQuery(graphql`
+        query {
+            site {
+                siteMetadata {
+                    social {
+                        username
+                        email
+                    }
+                }
+            }
+        }
+    `)
+
+    const { username, email } = site.siteMetadata.social
+
     return (
         <StyledSection id="Contacts">
             <Container>
@@ -33,26 +49,23 @@ const Contacts = () => {
                             just chat? <br /> You are welcome!
                         </p>
 
-                        <Button
-                            to="nubelsondev@hotmail.com"
-                            text="Send message"
-                        />
+                        <Button to={email} text="Send message" />
 
                         <SocialGroup>
                             <SocialIcon
-                                to="https://github.com/nubelsondev"
+                                to={`https://github.com/${username}`}
                                 icon={faGithub}
                             />
                             <SocialIcon
-                                to="https://www.linkedin.com/in/nubelsondev/"
+                                to={`https://www.linkedin.com/in/${username}`}
                                 icon={faLinkedinIn}
                             />
                             <SocialIcon
-                                to="https://www.instagram.com/nubelsondev/"
+                                to={`https://www.instagram.com/${username}`}
                                 icon={faInstagram}
                             />
                             <SocialIcon
-                                to="https://twitter.com/nubelsondev"
+                                to={`https://twitter.com/${username}`}
                                 icon={faTwitter}
                             />
                         </SocialGroup>
