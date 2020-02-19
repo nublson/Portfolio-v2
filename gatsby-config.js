@@ -38,6 +38,9 @@ module.exports = {
             },
         },
         {
+            resolve: `gatsby-transformer-remark`,
+        },
+        {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `Nubelson | Full-Stack Developer`,

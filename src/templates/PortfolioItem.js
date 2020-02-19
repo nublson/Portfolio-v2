@@ -1,24 +1,57 @@
 import React from "react"
+import Img from "gatsby-image"
 import styled from "styled-components"
 
-const Wrapper = styled.div`
-    margin-bottom: 5rem;
+import { VisitIcon } from "../components/UI/Icons"
 
-    img {
-        border-radius: var(--radius);
-    }
+const Wrapper = styled.div`
+    margin-bottom: 8rem;
+    width: 100%;
+    position: relative;
 
     p {
-        font-size: 1.8rem;
+        color: var(--text-highlight);
+        font-size: 2rem;
         text-decoration: underline;
+        transition: all 0.2s;
+
+        &:hover {
+            text-decoration: underline transparent;
+        }
     }
 `
 
-const PortfolioItem = ({ thumbnail, title }) => {
+const Image = styled(Img)`
+    width: 100%;
+    border-radius: var(--radius);
+`
+
+const Link = styled.a`
+    color: var(--text-highlight);
+    font-size: 2rem;
+    transition: all 0.2s;
+
+    &:hover {
+        text-decoration: underline transparent;
+    }
+`
+
+const PortfolioItem = ({ thumbnail, title, live, repo }) => {
     return (
         <Wrapper>
-            <img src={thumbnail} alt="Thumbnail" />
-            <p>{title} - Homepage</p>
+            <Image fluid={thumbnail.childImageSharp.fluid} />
+            {repo ? (
+                <Link
+                    href={`https://github.com/nubelsondev/${repo}`}
+                    target="_blank"
+                    rel="noopener"
+                >
+                    {title} - Homepage
+                </Link>
+            ) : (
+                <p> {title} </p>
+            )}
+            {live ? <VisitIcon to={live} /> : null}
         </Wrapper>
     )
 }

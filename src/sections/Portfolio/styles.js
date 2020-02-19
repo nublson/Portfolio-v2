@@ -2,18 +2,13 @@ import styled from "styled-components"
 
 export const Content = styled.div`
     text-align: center;
+    width: 65%;
 `
 
 export const ProjectSection = styled.div`
+    width: 100%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    & > :last-child {
-        font-size: 2rem;
-        font-weight: bold;
-        text-decoration: underline;
-        color: var(--text-highlight);
-    }
 `
