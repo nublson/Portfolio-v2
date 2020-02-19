@@ -1,9 +1,9 @@
 module.exports = {
     siteMetadata: {
         title: `Nubelson | Full-Stack Developer`,
-        description: `I’m Nubelson, a 22 years old self-taught Ful-Stack developer, from Angola, living in Portugal.`,
+        description: `I’m Nubelson, a 22 years old self-taught Ful-Stack Developer, from Angola, living in Portugal.`,
         author: `Nubelson Fernandes`,
-        siteUrl: "https://nubelson.dev",
+        siteUrl: "https://www.nubelson.dev",
         social: {
             twitter: "nubelsondev",
             instagram: "nubelsondev",

@@ -26,4 +26,9 @@ export const StyledItem = styled(Link)`
     font-weight: bold;
     color: var(--text-grey);
     cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+        color: var(--text-highlight);
+    }
 `
