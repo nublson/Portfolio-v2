@@ -1,7 +1,9 @@
 import React from "react"
 import { Container, StyledNav, StyledItem } from "./styles"
 
-const Header = () => {
+import ThemeSwitcher from "../ThemeSwitcher"
+
+const Header = ({ toogleTheme, theme }) => {
     const items = ["Home", "About me", "Skills", "Portfolio", "Contacts"]
 
     return (
@@ -13,6 +15,8 @@ const Header = () => {
                     </StyledItem>
                 ))}
             </StyledNav>
+
+            <ThemeSwitcher theme={theme} toogleTheme={toogleTheme} />
         </Container>
     )
 }

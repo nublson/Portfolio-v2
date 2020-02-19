@@ -6,12 +6,12 @@ import Header from "../../components/UI/Header"
 
 import Logo from "../../components/UI/Logo"
 
-const Home = ({ theme }) => {
+const Home = ({ theme, toogleTheme }) => {
     return (
         <StyledSection id="Home" fullHeight>
             <Container>
                 <Wrapper>
-                    <Header />
+                    <Header theme={theme} toogleTheme={toogleTheme} />
 
                     <Content>
                         <StyledInfo>

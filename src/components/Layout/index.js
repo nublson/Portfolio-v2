@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { ThemeProvider } from "styled-components"
 
 import themes from "../../styles/themes/themes"
@@ -9,12 +9,17 @@ import Home from "../../sections/Home"
 import Contacts from "../../sections/Contacts"
 
 const Layout = ({ children }) => {
-    const { light } = themes.title
+    const { light, dark } = themes.title
+    const [theme, setTheme] = useState(light)
+
+    const toogleTheme = () => {
+        theme.name === "light" ? setTheme(dark) : setTheme(light)
+    }
 
     return (
-        <ThemeProvider theme={light}>
+        <ThemeProvider theme={theme}>
             <SEO />
-            <Home theme={light} />
+            <Home theme={theme} toogleTheme={toogleTheme} />
             {children}
             <Contacts />
             <GlobalStyles />
