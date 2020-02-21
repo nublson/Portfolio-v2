@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faLink } from "@fortawesome/free-solid-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
 const StyledLink = styled.a`
     display: flex;
@@ -51,10 +51,14 @@ export const SocialIcon = ({ icon, to }) => {
     )
 }
 
-export const VisitIcon = ({ to }) => {
+export const VisitIcon = ({ repo }) => {
     return (
-        <WrapperLink href={to} target="_blank" rel="noopener">
-            <LinkIcon icon={faLink} />
+        <WrapperLink
+            href={`https://github.com/nubelsondev/${repo}`}
+            target="_blank"
+            rel="noopener"
+        >
+            <LinkIcon icon={faGithub} />
         </WrapperLink>
     )
 }

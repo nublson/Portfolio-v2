@@ -40,18 +40,14 @@ const PortfolioItem = ({ thumbnail, title, live, repo }) => {
     return (
         <Wrapper>
             <Image fluid={thumbnail.childImageSharp.fluid} />
-            {repo ? (
-                <Link
-                    href={`https://github.com/nubelsondev/${repo}`}
-                    target="_blank"
-                    rel="noopener"
-                >
+            {live ? (
+                <Link href={live} target="_blank" rel="noopener">
                     {title} - Homepage
                 </Link>
             ) : (
                 <p> {title} </p>
             )}
-            {live ? <VisitIcon to={live} /> : null}
+            {repo ? <VisitIcon repo={repo} /> : null}
         </Wrapper>
     )
 }
