@@ -11,6 +11,12 @@ export const StyledText = styled.div`
     font-weight: 300;
 
     p {
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    @media ${props => props.theme.mediaQueries.small} {
+        p {
+            margin-bottom: 3rem;
+        }
     }
 `

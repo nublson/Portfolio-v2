@@ -21,8 +21,10 @@
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.19.18",
     "gatsby-image": "^2.2.41",
+    "gatsby-plugin-google-analytics": "^2.1.35",
     "gatsby-plugin-manifest": "^2.2.41",
     "gatsby-plugin-offline": "^3.0.34",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-plugin-sitemap": "^2.2.27",
@@ -36,6 +38,7 @@
     "react-icons": "^3.9.0",
     "react-scroll": "^1.7.16",
     "react-spring": "^8.0.27",
+    "rehype-react": "^4.0.1",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
