@@ -2,8 +2,8 @@ import React from "react"
 
 import { SmallWrapper, Content, SkillsGroup } from "./styles"
 
-import figma from "../../images/logos/figma.png"
-import node from "../../images/logos/node.png"
+import figma from "../../images/logos/figma.svg"
+import node from "../../images/logos/node.svg"
 import react from "../../images/logos/react.png"
 import reactn from "../../images/logos/reactn.png"
 
