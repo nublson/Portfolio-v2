@@ -2,7 +2,7 @@
 
 Design lives [here](https://www.figma.com/file/JM3rLMpL8KUWrUEg2BsAHL/nubelsondev-v2?node-id=0%3A1).
 
-![Portfolio Preview](./thumbnailv3.png)
+![Portfolio Preview](./thumbnail.png)
 
 This is version 2 of my portfolio, including a new, more original and minimalist design.
 

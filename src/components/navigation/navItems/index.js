@@ -15,8 +15,6 @@ const StyledNav = styled.nav`
         mobile ? null : "2px solid var(--text-grey)"};
     flex-direction: ${({ mobile }) => (mobile ? "column" : "row")};
     justify-content: space-between;
-    /* justify-content: ${({ mobile }) =>
-        mobile ? "flex-start" : "space-between"}; */
     align-items: ${({ mobile }) => (mobile ? "flex-start" : "center")};
     @media ${({ theme }) => theme.mediaQueries.large} {
         margin-right: ${({ mobile }) => (mobile ? "0rem" : "4rem")};

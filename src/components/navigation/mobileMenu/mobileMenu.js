@@ -1,5 +1,4 @@
 import React from "react"
-import styled from "styled-components"
 import { useTransition, config } from "react-spring"
 
 import HamburgerToggler from "./hamburgerToggle"
