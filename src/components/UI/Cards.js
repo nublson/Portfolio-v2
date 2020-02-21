@@ -14,6 +14,19 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media ${props => props.theme.mediaQueries.small} {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    @media ${props => props.theme.mediaQueries.smaller} {
+        margin-bottom: 6rem;
+    }
+
+    @media ${props => props.theme.mediaQueries.smaller} {
+        margin-bottom: 8rem;
+    }
 `
 
 export const SkillCard = ({ logo, tool, rol }) => {

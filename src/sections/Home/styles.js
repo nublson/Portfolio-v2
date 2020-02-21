@@ -1,17 +1,21 @@
 import styled from "styled-components"
-import home from "../../images/home_web.jpeg"
 
 export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    justify-content: center;
+    flex: 1;
 `
 export const Content = styled.div`
     margin-top: 8rem;
 
     display: flex;
     flex-direction: column;
+
+    @media ${props => props.theme.mediaQueries.small} {
+        margin-top: 6rem;
+    }
 `
 
 export const StyledInfo = styled.div`
@@ -21,32 +25,33 @@ export const StyledInfo = styled.div`
     justify-content: space-between;
     align-items: flex-end;
 
-    & > :last-child {
-        font-weight: bold;
-        margin: 0;
-        padding: 0;
-        color: var(--text-grey);
-        transform: rotate(-90deg) translateX(1.75rem) translateY(2.4rem);
-
-        span {
-            color: var(--text-highlight);
-        }
-    }
-
     p {
         font-size: 1.6rem;
         transform: translateY(0.7rem);
         color: var(--text-highlight);
     }
+
+    @media ${props => props.theme.mediaQueries.small} {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 4rem;
+
+        p {
+            margin-top: 8rem;
+            font-size: 2rem;
+        }
+    }
 `
 
 export const StyledImage = styled.div`
-    background: url(${home});
-    background-size: cover;
-    background-position: center;
     border-radius: var(--radius);
+    border: 2px solid var(--text-highlight);
     width: 100%;
     height: 48rem;
 
     margin-bottom: 10rem;
+
+    @media ${props => props.theme.mediaQueries.small} {
+        height: 60rem;
+    }
 `

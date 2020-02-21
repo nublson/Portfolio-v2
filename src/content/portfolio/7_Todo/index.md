@@ -1,6 +1,6 @@
 ---
 title: "Todo"
 live: "https://www.todo.nubelson.dev/"
-repo: "Todo"
+repo: "ToDo-Application"
 image: "./todo.png"
 ---

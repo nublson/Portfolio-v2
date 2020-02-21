@@ -5,6 +5,7 @@ import { IconContext } from "react-icons"
 import { IoIosSunny, IoIosMoon } from "react-icons/io"
 
 const Container = styled.div`
+    z-index: 2;
     width: 2.5rem;
     height: 2.5rem;
     position: fixed;
@@ -16,6 +17,11 @@ const Container = styled.div`
 
     & > * {
         cursor: pointer;
+    }
+
+    @media ${props => props.theme.mediaQueries.small} {
+        position: relative;
+        margin-left: 3rem;
     }
 `
 

@@ -21,13 +21,12 @@ const About = () => {
 
                         <StyledText>
                             <p>
-                                I'm Nubelson , a self-taught 22-year old
-                                Full-Stack Developer, born in Angola and
-                                currently living in Portugal who loves to design
-                                and build things for Web and Mobile devices. I
-                                build websites and applications with exceptional
-                                performance and interface with efficient and
-                                modern backends.
+                                I'm Nubelson , a 22-year old Full-Stack
+                                Developer, born in Angola and currently living
+                                in Portugal who loves to design and build things
+                                for Web and Mobile devices. I build websites and
+                                applications with exceptional performance and
+                                interface with efficient and modern backends.
                             </p>
                             <p>
                                 I have been programming with JavaScript since

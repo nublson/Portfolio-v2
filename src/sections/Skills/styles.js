@@ -20,4 +20,8 @@ export const Content = styled.div`
 export const SkillsGroup = styled.div`
     display: flex;
     justify-content: space-between;
+
+    @media ${props => props.theme.mediaQueries.small} {
+        flex-direction: column;
+    }
 `

@@ -9,6 +9,10 @@ const StyledButton = styled.a`
     border-radius: 3rem;
     background-color: var(--text-highlight);
     color: var(--background);
+
+    @media ${props => props.theme.mediaQueries.small} {
+        width: 100%;
+    }
 `
 
 const Button = ({ text, to }) => {

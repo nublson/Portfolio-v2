@@ -6,7 +6,7 @@ module.exports = {
         siteUrl: "https://www.nubelson.dev",
         social: {
             username: "nubelsondev",
-            email: "hello@nubelson.dev",
+            email: "nubelsondev@hotmail.com",
         },
         // name of the image for social website share, should be in static folder
         imageShare: `share.svg`,

@@ -12,6 +12,10 @@ const StyledLink = styled.a`
 const StyledIcon = styled(FontAwesomeIcon)`
     font-size: 4rem;
     color: var(--text-highlight);
+
+    @media ${props => props.theme.mediaQueries.small} {
+        font-size: 3rem;
+    }
 `
 
 const WrapperLink = styled(StyledLink)`
@@ -33,6 +37,10 @@ const WrapperLink = styled(StyledLink)`
 const LinkIcon = styled(StyledIcon)`
     font-size: 1.3rem;
     color: #fff;
+
+    @media ${props => props.theme.mediaQueries.small} {
+        font-size: 1.3rem;
+    }
 `
 
 export const SocialIcon = ({ icon, to }) => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import { ThemeProvider } from "styled-components"
+import styled, { ThemeProvider } from "styled-components"
 
 import themes from "../../styles/themes/themes"
 import GlobalStyles from "../../styles/global"
@@ -9,6 +9,22 @@ import { loadState, saveState } from "../../utils/localStorage"
 
 import Home from "../../sections/Home"
 import Contacts from "../../sections/Contacts"
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--background);
+    color: var(--text);
+    transition: color 0.2s ease-out, background 0.2s ease-out;
+`
+
+const StyledMain = styled.main`
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+`
 
 const Layout = ({ children }) => {
     const { light, dark } = themes.title
@@ -24,11 +40,13 @@ const Layout = ({ children }) => {
 
     return (
         <ThemeProvider theme={theme}>
-            <SEO />
-            <Home theme={theme} toogleTheme={toogleTheme} />
-            {children}
-            <Contacts />
-            <GlobalStyles />
+            <Wrapper>
+                <SEO />
+                <Home theme={theme} toogleTheme={toogleTheme} />
+                <StyledMain>{children}</StyledMain>
+                <Contacts />
+                <GlobalStyles />
+            </Wrapper>
         </ThemeProvider>
     )
 }
