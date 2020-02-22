@@ -9,7 +9,7 @@ module.exports = {
             email: "nubelsondev@hotmail.com",
         },
         // name of the image for social website share, should be in static folder
-        imageShare: `share.png`,
+        imageShare: `share.svg`,
     },
     plugins: [
         {
@@ -69,7 +69,7 @@ module.exports = {
                 background_color: `#fff`,
                 theme_color: `#828282`,
                 display: `minimal-ui`,
-                icon: `src/images/icon.png`,
+                icon: `src/images/icon.svg`,
             },
         },
         `gatsby-plugin-offline`,
