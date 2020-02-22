@@ -3,7 +3,7 @@ module.exports = {
         title: `Nubelson | Full-Stack Developer`,
         description: `I’m Nubelson, a 22 years old Ful-Stack Developer, from Angola, living in Portugal.`,
         author: `Nubelson Fernandes`,
-        siteUrl: "https://nubelson.dev",
+        siteUrl: "https://www.nubelson.dev",
         social: {
             username: "nubelsondev",
             email: "nubelsondev@hotmail.com",
@@ -20,8 +20,8 @@ module.exports = {
                 head: false,
             },
         },
+        "gatsby-plugin-robots-txt",
         `gatsby-plugin-react-helmet`,
-        `gatsby-plugin-sitemap`,
         `gatsby-plugin-styled-components`,
         {
             resolve: `gatsby-source-filesystem`,
