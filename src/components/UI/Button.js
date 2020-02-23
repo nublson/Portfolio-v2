@@ -16,7 +16,11 @@ const StyledButton = styled.a`
 `
 
 const Button = ({ text, to }) => {
-    return <StyledButton href={`mailto:${to}`}>{text}</StyledButton>
+    return (
+        <StyledButton title={to} href={`mailto:${to}`}>
+            {text}
+        </StyledButton>
+    )
 }
 
 export default Button

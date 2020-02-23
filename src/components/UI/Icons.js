@@ -45,7 +45,7 @@ const LinkIcon = styled(StyledIcon)`
 
 export const SocialIcon = ({ icon, to }) => {
     return (
-        <StyledLink href={to} target="_blank" rel="noopener">
+        <StyledLink title={to} href={to} target="_blank" rel="noopener">
             <StyledIcon icon={icon} />
         </StyledLink>
     )
@@ -54,9 +54,10 @@ export const SocialIcon = ({ icon, to }) => {
 export const VisitIcon = ({ repo }) => {
     return (
         <WrapperLink
-            href={`https://github.com/nubelsondev/${repo}`}
+            title={`${repo} Repository`}
             target="_blank"
             rel="noopener"
+            href={`https://github.com/nubelsondev/${repo}`}
         >
             <LinkIcon icon={faGithub} />
         </WrapperLink>
