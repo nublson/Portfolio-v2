@@ -38,6 +38,10 @@ const SEO = ({ meta, lang, title }) => {
                     content: metaDescription,
                 },
                 {
+                    rel: "canonical",
+                    href: site.siteMetadata.siteUrl,
+                },
+                {
                     property: "og:url",
                     content: site.siteMetadata.siteUrl,
                 },

@@ -2,8 +2,10 @@ module.exports = {
     siteMetadata: {
         title: `Nubelson | Full-Stack Developer`,
         description: `I’m Nubelson, a 22 years old Ful-Stack Developer, from Angola, living in Portugal.`,
+        keywords: `Nubelson Fernandes, Nubelson, Fernandes, nubelsondev, full-stack developer, fullstack, web developer, mobile developer, ui designer, javascript`,
         author: `Nubelson Fernandes`,
-        siteUrl: "https://www.nubelson.dev",
+        siteUrl: "https://nubelson.dev",
+
         social: {
             username: "nubelsondev",
             email: "nubelsondev@hotmail.com",
@@ -12,17 +14,23 @@ module.exports = {
         imageShare: `share.svg`,
     },
     plugins: [
-        {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: "UA-158868946-1",
-                // Defines where to place the tracking script - `true` in the head and `false` in the body
-                head: false,
-            },
-        },
-        `gatsby-plugin-sitemap`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-styled-components`,
+        `gatsby-plugin-sitemap`,
+        `gatsby-plugin-robots-txt`,
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Nubelson | Full-Stack Developer`,
+                short_name: `NubelsonFernandes`,
+                start_url: `/`,
+                background_color: `#fff`,
+                theme_color: `#828282`,
+                display: `minimal-ui`,
+                icon: `src/images/icon.svg`,
+            },
+        },
+        `gatsby-plugin-offline`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -61,17 +69,10 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
         },
         {
-            resolve: `gatsby-plugin-manifest`,
+            resolve: `gatsby-plugin-google-analytics`,
             options: {
-                name: `Nubelson | Full-Stack Developer`,
-                short_name: `Nubelson`,
-                start_url: `/`,
-                background_color: `#fff`,
-                theme_color: `#828282`,
-                display: `minimal-ui`,
-                icon: `src/images/icon.svg`,
+                trackingId: "UA-158868946-1",
             },
         },
-        `gatsby-plugin-offline`,
     ],
 }
