@@ -11,6 +11,7 @@ const SEO = ({ meta, lang, title }) => {
                     siteMetadata {
                         title
                         description
+                        keywords
                         author
                         siteUrl
                         social {
@@ -36,6 +37,10 @@ const SEO = ({ meta, lang, title }) => {
                 {
                     name: `description`,
                     content: metaDescription,
+                },
+                {
+                    name: `keywords`,
+                    content: site.siteMetadata.keywords,
                 },
                 {
                     rel: "canonical",
