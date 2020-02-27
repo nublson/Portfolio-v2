@@ -4,8 +4,8 @@ module.exports = {
         description: `I’m Nubelson, a 22 years old Ful-Stack Developer, from Angola, living in Portugal.`,
         keywords: `Nubelson Fernandes, Nubelson, Fernandes, nubelsondev, full-stack developer, fullstack, web developer, mobile developer, ui designer, javascript`,
         author: `Nubelson Fernandes`,
-        siteUrl: "https://nubelson.dev",
-
+        siteUrl: `https://nubelson.dev`,
+        googleVerification: `eRPme2Wzm2_bDtofxz7nq-JW-wFm2QL07QhIzJC6Xtk`,
         social: {
             username: "nubelsondev",
             email: "nubelsondev@hotmail.com",

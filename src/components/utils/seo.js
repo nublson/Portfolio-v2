@@ -14,6 +14,7 @@ const SEO = ({ meta, lang, title }) => {
                         keywords
                         author
                         siteUrl
+                        googleVerification
                         social {
                             username
                         }
@@ -41,6 +42,10 @@ const SEO = ({ meta, lang, title }) => {
                 {
                     name: `keywords`,
                     content: site.siteMetadata.keywords,
+                },
+                {
+                    name: `google-site-verification`,
+                    content: site.siteMetadata.googleVerification,
                 },
                 {
                     rel: "canonical",
