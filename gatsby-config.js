@@ -15,7 +15,7 @@ module.exports = {
             "javascript",
         ],
         author: `Nubelson Fernandes`,
-        siteUrl: `https://nubelson.dev`,
+        siteUrl: `https://www.nubelson.dev/`,
         googleVerification: `eRPme2Wzm2_bDtofxz7nq-JW-wFm2QL07QhIzJC6Xtk`,
         social: {
             username: "nubelsondev",
