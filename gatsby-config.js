@@ -11,7 +11,7 @@ module.exports = {
             email: "nubelsondev@hotmail.com",
         },
         // name of the image for social website share, should be in static folder
-        imageShare: `share.png`,
+        imageShare: `share.webp`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,

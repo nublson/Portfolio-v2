@@ -2,5 +2,5 @@
 title: "Aircnc"
 live: ""
 repo: "Aircnc"
-image: "./aircnc.png"
+image: "./aircnc.webp"
 ---
