@@ -6,7 +6,7 @@ const StyledLabel = styled.label`
     position: fixed;
     width: 3.5rem;
     height: 3.5rem;
-    top: 5rem;
+    top: 8rem;
     right: 3rem;
     z-index: 3;
     & img {

@@ -17,7 +17,7 @@ const Container = styled.div`
         transform: rotate(90deg) translateX(0rem) translateY(0rem);
 
         position: absolute;
-        bottom: 4rem;
+        bottom: 14rem;
         right: 0rem;
 
         p {

@@ -15,18 +15,15 @@ const StyledLink = styled(Link)`
     }
 
     @media ${({ theme }) => theme.mediaQueries.small} {
-        font-size: 3rem;
-        margin: 0 0 3rem;
+        font-size: 3.5rem;
     }
 
     @media ${({ theme }) => theme.mediaQueries.smaller} {
         font-size: 3rem;
-        margin: 0 0 2rem;
     }
 
     @media ${({ theme }) => theme.mediaQueries.smallest} {
         font-size: 3.3rem;
-        margin: 0 0 4.5rem;
     }
 `
 

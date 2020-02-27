@@ -9,6 +9,7 @@ const StyledLogo = styled.img`
 
     @media ${props => props.theme.mediaQueries.small} {
         height: 8.5rem;
+        transform: translateY(2rem);
     }
 `
 

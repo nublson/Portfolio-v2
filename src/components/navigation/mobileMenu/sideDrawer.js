@@ -22,13 +22,13 @@ const BackgroundWrapper = styled(animated.div)`
 `
 
 const Wrapper = styled.div`
+    height: 100%;
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    margin: 4rem 2rem;
-    padding: 2rem 1rem;
+    padding: 8rem 2rem 20rem;
 `
 
 const SideDrawer = ({
