@@ -41,7 +41,7 @@ const SEO = ({ meta, lang, title }) => {
                 },
                 {
                     name: `keywords`,
-                    content: site.siteMetadata.keywords,
+                    content: site.siteMetadata.keywords.join(",").trim(),
                 },
                 {
                     name: `google-site-verification`,
@@ -84,16 +84,18 @@ const SEO = ({ meta, lang, title }) => {
                     content: metaDescription,
                 },
             ]
-                .concat([
-                    {
-                        property: "og:image",
-                        content: metaImage,
-                    },
-                    {
-                        name: "twitter:image",
-                        content: metaImage,
-                    },
-                ])
+                .concat(
+                    metaImage && [
+                        {
+                            property: "og:image",
+                            content: metaImage,
+                        },
+                        {
+                            name: "twitter:image",
+                            content: metaImage,
+                        },
+                    ]
+                )
                 .concat(meta)}
         />
     )
