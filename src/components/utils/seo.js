@@ -42,7 +42,7 @@ const SEO = ({ meta, lang, title }) => {
                 },
                 {
                     name: `keywords`,
-                    content: site.siteMetadata.keywords.join(",").trim(),
+                    content: site.siteMetadata.keywords,
                 },
                 {
                     name: `google-site-verification`,
