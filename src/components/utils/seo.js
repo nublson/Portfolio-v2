@@ -34,6 +34,7 @@ const SEO = ({ meta, lang, title }) => {
                 lang,
             }}
             title={title || site.siteMetadata.title}
+            link={{ rel: "canonical", href: site.siteMetadata.siteUrl }}
             meta={[
                 {
                     name: `description`,
@@ -46,10 +47,6 @@ const SEO = ({ meta, lang, title }) => {
                 {
                     name: `google-site-verification`,
                     content: site.siteMetadata.googleVerification,
-                },
-                {
-                    rel: "canonical",
-                    href: site.siteMetadata.siteUrl,
                 },
                 {
                     property: "og:url",
@@ -97,7 +94,9 @@ const SEO = ({ meta, lang, title }) => {
                     ]
                 )
                 .concat(meta)}
-        />
+        >
+            <link rel="canonical" href={site.siteMetadata.siteUrl} />
+        </Helmet>
     )
 }
 
