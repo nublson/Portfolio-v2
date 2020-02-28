@@ -25,10 +25,16 @@ export const StyledInfo = styled.div`
     justify-content: space-between;
     align-items: flex-end;
 
-    p {
+    p,
+    h1 {
         font-size: 1.6rem;
         transform: translateY(0.7rem);
         color: var(--text-highlight);
+    }
+
+    h1 {
+        font-weight: 400;
+        line-height: 1.7;
     }
 
     @media ${props => props.theme.mediaQueries.small} {

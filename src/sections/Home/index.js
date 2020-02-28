@@ -36,9 +36,9 @@ const Home = ({ theme, toogleTheme }) => {
                     <Content>
                         <StyledInfo>
                             <Logo theme={theme} />
-                            <p>
+                            <h1>
                                 UX | UI Designer & <br /> Full Stack Developer
-                            </p>
+                            </h1>
                             {isMobile ? null : <LangSwitcher />}
                         </StyledInfo>
 

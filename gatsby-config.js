@@ -22,7 +22,7 @@ module.exports = {
             resolve: `gatsby-plugin-manifest`,
             options: {
                 name: `Nubelson | Full-Stack Developer`,
-                short_name: `NubelsonFernandes`,
+                short_name: `Nubelson Fernandes`,
                 start_url: `/`,
                 background_color: `#fff`,
                 theme_color: `#828282`,
